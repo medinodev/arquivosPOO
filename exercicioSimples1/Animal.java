@@ -1,4 +1,4 @@
-package exercicioSimples;
+package exercicioSimples1;
 
 public class Animal {
 
