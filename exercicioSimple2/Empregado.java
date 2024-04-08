@@ -11,6 +11,7 @@ public class Empregado {
     public double getSalario(){ return salario; }
     public void setSalario(double salario) { this.salario = salario; } 
 
-    public String getMatricula(){ return 
+    public String getMatricula(){ return matricula; } 
+    public void setMatricula(String matricula) { this.matricula = matricula; }
     //Se o metodos abastrato tiver sido implementado na classe mãe, não é obrigatório que as classes filhas tenham também. 
 }
