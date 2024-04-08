@@ -1,6 +1,6 @@
 package exercicioSimple2;
 
-public class Cliente {
+public class Cliente extends Pessoa{
     protected double valorDivida;
     protected int anoNascimento;
 
@@ -11,4 +11,6 @@ public class Cliente {
     public int getAnoNascimento() { return anoNascimento; }
 
     public void setAnoNascimento(int anoNascimento) { this.anoNascimento = anoNascimento; }
+
+    //TO-DO: Criar toString com nome, idade, sexo, valor da dívida e ano de nascimento.
 }
