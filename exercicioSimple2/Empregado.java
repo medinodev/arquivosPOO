@@ -1,6 +1,6 @@
 package exercicioSimple2;
 
-public class Empregado {
+public class Empregado extends Pessoa{
     //alterar para pirvado
     protected double salario;
     protected String matricula;
