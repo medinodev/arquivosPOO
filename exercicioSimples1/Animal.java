@@ -12,5 +12,10 @@ public class Animal {
     public double getPeso(){ return peso; }
     public void setPeso(double peso){ this.peso = peso; }
 
+    public Animal(String nome, double peso){
+        this.nome = nome;
+        this.peso = peso;
+    }
+
     
 }

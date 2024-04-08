@@ -4,6 +4,11 @@ public class Peixe extends Animal{
 
     protected String tipoHabitat;
 
+    public Peixe(String nome, double peso, String tipoHabitat) {
+        super(nome, peso);
+        this.tipoHabitat = tipoHabitat;
+    }
+
     @Override
     public String toString() {
         return "Peixe{" +

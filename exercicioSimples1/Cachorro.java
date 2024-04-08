@@ -4,6 +4,11 @@ public class Cachorro extends Animal{
 
     protected String raca;
 
+    public Cachorro(String nome, double peso, String raca) {
+        super(nome, peso);
+        this.raca = raca;
+    }
+
     @Override
     public String toString() {
         return "Cachorro{" +
