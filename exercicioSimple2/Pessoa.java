@@ -1,9 +1,9 @@
 package exercicioSimple2;
 
 public class Pessoa {
-    protected String nome;
-    protected int idade;
-    protected String sexo;
+    private String nome;
+    private int idade;
+    private String sexo;
 
     public String getNome(){ return nome; }
     public void setNome(String nome){ this.nome = nome; }
