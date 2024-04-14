@@ -2,7 +2,7 @@ package herancaMultipla;
 
 public interface Seguranca {
 
-    boolean varificarSenha(String senha);
+    boolean verificarSenha(String senha);
 
     void mensagemSucesso();
 
