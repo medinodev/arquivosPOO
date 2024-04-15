@@ -1,4 +1,4 @@
-package herancaSimples.exe01.exe02;
+package herancaSimples.exe02;
 
 abstract class Instituicao {
 
