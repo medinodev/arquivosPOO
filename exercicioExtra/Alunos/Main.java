@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args){
         Scanner leitura = new Scanner(System.in);
 
-        Aluno alunos[] = new Aluno[3];
+        Aluno alunos[] = new Aluno[10];
 
         for(int i = 0; i < alunos.length; i++){
             System.out.println("Digite o nome do aluno");

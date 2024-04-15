@@ -34,15 +34,15 @@ public class Aluno {
     }
 
     public void notaMaisBaixa(Aluno aluno[]){
-        float menorNota = 0;
+        float menorNota = 99999;
         Aluno estudanteMenorNota = null;
         for(int i = 0; i < aluno.length; i++){
-            if(menorNota <= aluno[i].nota){
+            if(menorNota > aluno[i].nota){
                 menorNota = aluno[i].nota;
                 estudanteMenorNota = aluno[i];
             }
         }
-        System.out.println("A melhor nota foi " + estudanteMenorNota);
+        System.out.println("A menor nota foi " + estudanteMenorNota);
     }
 
     public String getNome(){ return nome; }
