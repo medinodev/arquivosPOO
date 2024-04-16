@@ -7,7 +7,7 @@ public class Conta {
     public void realizarSaque(float valorSaque){
     }
 
-    public void realizarDeposito(float valor){
+    public void realizarDeposito(float valorDeposito){
         
     }
 
