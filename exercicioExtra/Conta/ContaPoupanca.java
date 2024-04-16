@@ -17,6 +17,8 @@ public class ContaPoupanca extends Conta{
      @Override
      public void realizarDeposito(float valorDeposito){
         if(valor > 200) {
-          
-    }
+          float somaTotal = saldo + valorDeposito;
+          System.out.println("Deposito realizado com sucesso! O valor do saldo atual é R$ " + somaTotal); 
+    } else {
+          System.out.println("Falha de deposito! Somente valores maiores que R$ 200,00 podem ser realizados.");
 }
