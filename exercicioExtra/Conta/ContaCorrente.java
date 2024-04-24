@@ -2,15 +2,16 @@ package exercicioExtra.Conta;
 
 public class ContaCorrente extends Conta{
 
-    protected float saldo;
-
     @Override
     public void realizarSaque(float valorSaque) {
         if(valorSaque <= 1000){
-            float saque = saldo - valorSaque;
-            float descontoImposto = saque * 0.99f;
-            System.out.println("O valor sacado foi " + valorSaque + ". Seu saldo anterior era de " + saldo + "devido o saque, " +
-                    "eh cobrado uma taxa de imposto de 1% sobre o saldo restante, ficando seu saldo atual com " + descontoImposto);
+            float saldoAnterior = saldo;
+            saldo -= valorSaque;
+            float descontoImposto = valorSaque * 0.1f;
+            saldo -= descontoImposto;
+            //setSaldo(descontoImposto);
+            System.out.println("O valor sacado foi " + valorSaque + ". Seu saldo anterior era de " + saldoAnterior + " devido o saque, " +
+                    "eh cobrado uma taxa de imposto de 1% sobre o saldo restante, ficando seu saldo atual com " + saldo);
         } else {
             System.out.println("Seu limite de saque é de ate R$ 1000,00. O saque que voce solicitou" +
                     " excede seu limite, por favor tente novamente. " + "O valor de saque solicitado anteriormente" +
@@ -18,11 +19,17 @@ public class ContaCorrente extends Conta{
         }
     }
 
-    public float getSaldo() {
-        return saldo;
+    @Override
+    public void realizarDeposito(float valorDeposito) {
+        super.realizarDeposito(valorDeposito);
+        float saldoAnterior = saldo;
+        saldo += valorDeposito;
+        //setSaldo(somaTotal);
+        System.out.println("Deposito de R$ " + valorDeposito +" realizado com sucesso! O valor do saldo atual é R$ " + saldo);
     }
 
-    public void setSaldo(float saldo) {
-        this.saldo = saldo;
+    @Override
+    public void consultarSaldo() {
+        super.consultarSaldo();
     }
 }

@@ -1,5 +1,15 @@
 package exercicioExtra.Alunos;
 
+/* Faça uma rotina que lê um array de record de tamanho 10 contendo um caderno com
+o nome e a nota dos alunos (notas de 0 a 10). Em seguida leia o array e informe a nota
+média da turma e o nome dos alunos com melhor e pior notas. Não é permitido o uso
+de funções como: MaxValue, MaxIntValue, MinIntValue para o array com as notas,
+implemente sua própria lógica de pesquisa para o array.
+
+Campo 1 O nome do aluno
+Campo 2 O nota do aluno
+
+*/
 public class Aluno {
     private String nome;
     private float nota;
@@ -24,6 +34,7 @@ public class Aluno {
     public void melhorNota(Aluno aluno[]){
         float melhorNota = 0;
         Aluno estudanteMelhorNota = null;
+        //Aluno estudanteMelhorNota [] = new Aluno[];
         for(int i = 0; i < aluno.length; i++){
                 if(melhorNota <= aluno[i].nota){
                     melhorNota = aluno[i].nota;

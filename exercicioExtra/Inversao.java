@@ -27,6 +27,7 @@ public class Inversao {
 
         if(conferenciaNome.equals(palindromo)){
             System.out.println("As palavras digitadas sao palindromos");
+
         } else {
             System.out.println("Nao sao palindromos");
         }
