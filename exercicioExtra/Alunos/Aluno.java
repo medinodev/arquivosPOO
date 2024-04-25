@@ -33,27 +33,27 @@ public class Aluno {
 
     public void melhorNota(Aluno aluno[]){
         float melhorNota = 0;
-        Aluno estudanteMelhorNota = null;
+        String estudanteMelhorNota = null;
         //Aluno estudanteMelhorNota [] = new Aluno[];
         for(int i = 0; i < aluno.length; i++){
                 if(melhorNota <= aluno[i].nota){
                     melhorNota = aluno[i].nota;
-                    estudanteMelhorNota = aluno[i];
+                    estudanteMelhorNota = aluno[i].getNome();
                 }
         }
-        System.out.println("A melhor nota foi " + estudanteMelhorNota);
+        System.out.println("A melhor nota foi do aluno " + estudanteMelhorNota);
     }
 
     public void notaMaisBaixa(Aluno aluno[]){
         float menorNota = 99999;
-        Aluno estudanteMenorNota = null;
+        String estudanteMenorNota = null;
         for(int i = 0; i < aluno.length; i++){
             if(menorNota > aluno[i].nota){
                 menorNota = aluno[i].nota;
-                estudanteMenorNota = aluno[i];
+                estudanteMenorNota = aluno[i].getNome();
             }
         }
-        System.out.println("A menor nota foi " + estudanteMenorNota);
+        System.out.println("A menor nota foi do aluno " + estudanteMenorNota);
     }
 
     public String getNome(){ return nome; }
