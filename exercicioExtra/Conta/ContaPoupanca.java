@@ -18,15 +18,13 @@ public class ContaPoupanca extends Conta {
     @Override
     public void realizarSaque(float valorSaque) {
         if (valorSaque <= 500) {
-            float saldoAnterior = saldo;
+            //float saldoAnterior = saldo;
             saldo -= valorSaque;
             //setSaldo(saque);
-            System.out.println("O valor sacado foi " + valorSaque + " seu saldo anterior era de " + saldoAnterior + " devido o saque" +
-                    " seu saldo atual é " + saldo);
+            System.out.println("O valor sacado foi " + valorSaque + " seu saldo atual é " + saldo);
         } else {
             System.out.println("Seu limite de saque é de ate R$ 500,00. O saque que voce solicitou" +
-                    " excede seu limite, por favor tente novamente. " + "O valor de saque solicitado anteriormente" +
-                    " foi de R$ " + valorSaque);
+                    " excede seu limite, por favor tente novamente. ");
         }
 
     }
